@@ -1,0 +1,23 @@
+{
+  "name": "qaa-loanapplication",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cypress.config.js",
+  "dependencies": {
+    "cypress-xpath": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zbrown001/qaa-loanApplication.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zbrown001/qaa-loanApplication/issues"
+  },
+  "homepage": "https://github.com/zbrown001/qaa-loanApplication#readme"
+}

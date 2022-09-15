@@ -1,8 +1,8 @@
 name: Cypress Tests
 
-on:
-  schedule:
-    - cron: '0 * * * *'
+on: [push]
+  #schedule:
+    #- cron: '0 * * * *'
 
 jobs:
   cypress-run:
@@ -17,4 +17,5 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v4 # use the explicit version number
         with:
-          build: npx cypress run --record --key b44d18cc-21e5-45ae-8acb-88b350ec5a27
+          build: npx cypress run --spec "cypress/e2e/demoLO.cy.js"
+          build: npx cypress run --spec "cypress/e2e/demoLOA.cy.js"

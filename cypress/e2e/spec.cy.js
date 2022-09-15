@@ -1,3 +1,5 @@
+// npx cypress run --record --key b44d18cc-21e5-45ae-8acb-88b350ec5a27
+
 import { faker } from '@faker-js/faker'
 
 

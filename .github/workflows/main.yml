@@ -5,7 +5,7 @@ on: [push]
     #- cron: '0 * * * *'
 
 jobs:
-  cypress-run:
+  demo-lo:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -22,6 +22,12 @@ jobs:
   demo-loa:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          build: npm i -D cypress
+      # Install NPM dependencies, cache them correctly
+      # and run all Cypress tests
       - name: Demo Loan Officer Assistant
         uses: cypress-io/github-action@v4 # use the explicit version number
         with:

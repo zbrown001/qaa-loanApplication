@@ -31,4 +31,4 @@ jobs:
       - name: Demo Loan Officer Assistant
         uses: cypress-io/github-action@v4 # use the explicit version number
         with:
-          spec: cypress/e2e/LoanOfficer/demoLOA.cy.js
+          spec: cypress/e2e/LoanOfficerAssistant/demoLOA.cy.js

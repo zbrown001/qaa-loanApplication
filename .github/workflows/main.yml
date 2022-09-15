@@ -14,8 +14,11 @@ jobs:
           build: npm i -D cypress
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
-      - name: Cypress run
+      - name: Demo Loan Officer
         uses: cypress-io/github-action@v4 # use the explicit version number
         with:
           build: npx cypress run --spec "cypress/e2e/demoLO.cy.js"
+      - name: Demo Loan Officer Assistant
+        uses: cypress-io/github-action@v4 # use the explicit version number
+        with:
           build: npx cypress run --spec "cypress/e2e/demoLOA.cy.js"

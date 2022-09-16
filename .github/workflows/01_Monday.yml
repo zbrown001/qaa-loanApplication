@@ -10,8 +10,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        with:
-          build: npm i -D cypress
+        #with:
+          #build: npm i -D cypress
 
 # -----------------------------------------------------------------------------------
 

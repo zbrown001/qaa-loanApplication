@@ -21,6 +21,8 @@ jobs:
         with:
           spec: cypress/e2e/01_Loan_officer.cy.js
           record: true
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
 
       # Action Failed
       - name: Send Fail Email
@@ -61,6 +63,8 @@ jobs:
         with:
           spec: cypress/e2e/02_Loan_officer_assistant.cy.js
           record: true
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
 
       # Action Failed
       - name: Send Fail Email
@@ -101,6 +105,8 @@ jobs:
         with:
           spec: cypress/e2e/03_Processor.cy.js
           record: true
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
 
       # Action Failed
       - name: Send Fail Email
@@ -141,6 +147,8 @@ jobs:
         with:
           spec: cypress/e2e/04_Specialist.cy.js
           record: true
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
 
       # Action Failed
       - name: Send Fail Email
@@ -181,6 +189,8 @@ jobs:
         with:
           spec: cypress/e2e/05_Underwriter.cy.js
           record: true
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
 
       # Action Failed
       - name: Send Fail Email
@@ -221,6 +231,8 @@ jobs:
         with:
           spec: cypress/e2e/06_Closer.cy.js
           record: true
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
 
       # Action Failed
       - name: Send Fail Email
@@ -261,6 +273,8 @@ jobs:
         with:
           spec: cypress/e2e/07_Funder.cy.js
           record: true
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
 
       # Action Failed
       - name: Send Fail Email
@@ -301,6 +315,8 @@ jobs:
         with:
           spec: cypress/e2e/08_Post_Closer.cy.js
           record: true
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
 
       # Action Failed
       - name: Send Fail Email

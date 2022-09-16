@@ -154,6 +154,8 @@ jobs:
           to: zecbrown1@gmail.com
           # from email name
           from: noReply
+          # Optional converting Markdown to HTML (set content_type to text/html too):
+          convert_markdown: true
 
 # -----------------------------------------------------------------------------------
 
@@ -176,3 +178,5 @@ jobs:
           to: zecbrown1@gmail.com
           # from email name
           from: noReply
+          # Optional converting Markdown to HTML (set content_type to text/html too):
+          convert_markdown: true

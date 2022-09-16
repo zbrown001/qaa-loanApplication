@@ -20,19 +20,19 @@ jobs:
           spec: cypress/e2e/01_Loan_officer.cy.js
 
       - name: Test Info
-        uses: rjstone/discord-webhook-notify@v1
+        uses: rjstone/discord-webhook-notify@v1.0.4
         with:
             severity: info
             details: Test succeeded.
             webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
       - name: Test Warn
-        uses: rjstone/discord-webhook-notify@v1
+        uses: rjstone/discord-webhook-notify@v1.0.4
         with:
             severity: warn
             details: Test warning.
             webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
       - name: Test Error
-        uses: rjstone/discord-webhook-notify@v1
+        uses: rjstone/discord-webhook-notify@v1.0.4
         with:
             severity: error
             details: Test error.
@@ -55,6 +55,26 @@ jobs:
         with:
           spec: cypress/e2e/02_Loan_officer_assistant.cy.js
 
+      - name: Test Info
+        uses: rjstone/discord-webhook-notify@v1.0.4
+        with:
+            severity: info
+            details: Test succeeded.
+            webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+      - name: Test Warn
+        uses: rjstone/discord-webhook-notify@v1.0.4
+        with:
+            severity: warn
+            details: Test warning.
+            webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+      - name: Test Error
+        uses: rjstone/discord-webhook-notify@v1.0.4
+        with:
+            severity: error
+            details: Test error.
+            webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+
+
 # -----------------------------------------------------------------------------------
 
   Processor:
@@ -70,6 +90,26 @@ jobs:
         uses: cypress-io/github-action@v4 # use the explicit version number
         with:
           spec: cypress/e2e/03_Processor.cy.js
+
+      - name: Test Info
+        uses: rjstone/discord-webhook-notify@v1.0.4
+        with:
+            severity: info
+            details: Test succeeded.
+            webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+      - name: Test Warn
+        uses: rjstone/discord-webhook-notify@v1.0.4
+        with:
+            severity: warn
+            details: Test warning.
+            webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+      - name: Test Error
+        uses: rjstone/discord-webhook-notify@v1.0.4
+        with:
+            severity: error
+            details: Test error.
+            webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+
 
 # -----------------------------------------------------------------------------------
 
@@ -87,6 +127,26 @@ jobs:
         with:
           spec: cypress/e2e/04_Specialist.cy.js
 
+      - name: Test Info
+        uses: rjstone/discord-webhook-notify@v1.0.4
+        with:
+            severity: info
+            details: Test succeeded.
+            webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+      - name: Test Warn
+        uses: rjstone/discord-webhook-notify@v1.0.4
+        with:
+            severity: warn
+            details: Test warning.
+            webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+      - name: Test Error
+        uses: rjstone/discord-webhook-notify@v1.0.4
+        with:
+            severity: error
+            details: Test error.
+            webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+
+
 # -----------------------------------------------------------------------------------
 
   Underwriter:
@@ -102,6 +162,26 @@ jobs:
         uses: cypress-io/github-action@v4 # use the explicit version number
         with:
           spec: cypress/e2e/05_Underwriter.cy.js
+
+      - name: Test Info
+        uses: rjstone/discord-webhook-notify@v1.0.4
+        with:
+            severity: info
+            details: Test succeeded.
+            webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+      - name: Test Warn
+        uses: rjstone/discord-webhook-notify@v1.0.4
+        with:
+            severity: warn
+            details: Test warning.
+            webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+      - name: Test Error
+        uses: rjstone/discord-webhook-notify@v1.0.4
+        with:
+            severity: error
+            details: Test error.
+            webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+
 
 # -----------------------------------------------------------------------------------
 
@@ -119,6 +199,26 @@ jobs:
         with:
           spec: cypress/e2e/06_Closer.cy.js
 
+      - name: Test Info
+        uses: rjstone/discord-webhook-notify@v1.0.4
+        with:
+            severity: info
+            details: Test succeeded.
+            webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+      - name: Test Warn
+        uses: rjstone/discord-webhook-notify@v1.0.4
+        with:
+            severity: warn
+            details: Test warning.
+            webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+      - name: Test Error
+        uses: rjstone/discord-webhook-notify@v1.0.4
+        with:
+            severity: error
+            details: Test error.
+            webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+
+
 # -----------------------------------------------------------------------------------
 
   Funder:
@@ -135,6 +235,26 @@ jobs:
         with:
           spec: cypress/e2e/07_Funder.cy.js
 
+      - name: Test Info
+        uses: rjstone/discord-webhook-notify@v1.0.4
+        with:
+            severity: info
+            details: Test succeeded.
+            webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+      - name: Test Warn
+        uses: rjstone/discord-webhook-notify@v1.0.4
+        with:
+            severity: warn
+            details: Test warning.
+            webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+      - name: Test Error
+        uses: rjstone/discord-webhook-notify@v1.0.4
+        with:
+            severity: error
+            details: Test error.
+            webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+
+
 # -----------------------------------------------------------------------------------
 
   Post-Closer:
@@ -150,5 +270,25 @@ jobs:
         uses: cypress-io/github-action@v4 # use the explicit version number
         with:
           spec: cypress/e2e/08_Post_Closer.cy.js
+
+      - name: Test Info
+        uses: rjstone/discord-webhook-notify@v1.0.4
+        with:
+            severity: info
+            details: Test succeeded.
+            webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+      - name: Test Warn
+        uses: rjstone/discord-webhook-notify@v1.0.4
+        with:
+            severity: warn
+            details: Test warning.
+            webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+      - name: Test Error
+        uses: rjstone/discord-webhook-notify@v1.0.4
+        with:
+            severity: error
+            details: Test error.
+            webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+
 
 # -----------------------------------------------------------------------------------

@@ -18,9 +18,7 @@ jobs:
         uses: cypress-io/github-action@v4 # use the explicit version number
         with:
           spec: cypress/e2e/01_Loan_officer.cy.js
-          key: b44d18cc-21e5-45ae-8acb-88b350ec5a27
           record: true
-          CYPRESS_RECORD_KEY: b44d18cc-21e5-45ae-8acb-88b350ec5a27
 
 # -----------------------------------------------------------------------------------
 

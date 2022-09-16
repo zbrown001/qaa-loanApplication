@@ -1,4 +1,6 @@
-module.exports = {
+const { defineConfig } = require("cypress")
+
+module.exports = defineConfig({
   chromeWebSecurity: false,
   projectId: "m6w88w",
   env: {
@@ -8,4 +10,4 @@ module.exports = {
     setupNodeEvents(on, config) {
     },
   },
-};
+})

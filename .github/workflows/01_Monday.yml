@@ -21,6 +21,26 @@ jobs:
         with:
           spec: cypress/e2e/01_Loan_officer.cy.js
 
+      # Action Failed
+      - name: Send Fail Email
+        if: failure()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          # mail server settings
+          server_address: smtp.gmail.com
+          server_port: 465
+          # user credentials
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          # email subject
+          subject: Demo Account (${{ github.job }}) is currently unavailable
+          # email body as text
+          body: The Demo account - ${{ github.job }} - is currently unavailable. | We will notify you when it is available. | Thank you for your patience.
+          # comma-separated string, send email to
+          to: zecbrown1@gmail.com
+          # from email name
+          from: noReply
+
 # -----------------------------------------------------------------------------------
 
   Loan-Officer-Assistant:
@@ -36,6 +56,26 @@ jobs:
         uses: cypress-io/github-action@v4 # use the explicit version number
         with:
           spec: cypress/e2e/02_Loan_officer_assistant.cy.js
+
+      # Action Failed
+      - name: Send Fail Email
+        if: failure()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          # mail server settings
+          server_address: smtp.gmail.com
+          server_port: 465
+          # user credentials
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          # email subject
+          subject: Demo Account (${{ github.job }}) is currently unavailable
+          # email body as text
+          body: The Demo account - ${{ github.job }} - is currently unavailable. | We will notify you when it is available. | Thank you for your patience.
+          # comma-separated string, send email to
+          to: zecbrown1@gmail.com
+          # from email name
+          from: noReply
 
 # -----------------------------------------------------------------------------------
 
@@ -53,6 +93,26 @@ jobs:
         with:
           spec: cypress/e2e/03_Processor.cy.js
 
+      # Action Failed
+      - name: Send Fail Email
+        if: failure()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          # mail server settings
+          server_address: smtp.gmail.com
+          server_port: 465
+          # user credentials
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          # email subject
+          subject: Demo Account (${{ github.job }}) is currently unavailable
+          # email body as text
+          body: The Demo account - ${{ github.job }} - is currently unavailable. | We will notify you when it is available. | Thank you for your patience.
+          # comma-separated string, send email to
+          to: zecbrown1@gmail.com
+          # from email name
+          from: noReply
+
 # -----------------------------------------------------------------------------------
 
   Specialist:
@@ -68,6 +128,26 @@ jobs:
         uses: cypress-io/github-action@v4 # use the explicit version number
         with:
           spec: cypress/e2e/04_Specialist.cy.js
+
+      # Action Failed
+      - name: Send Fail Email
+        if: failure()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          # mail server settings
+          server_address: smtp.gmail.com
+          server_port: 465
+          # user credentials
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          # email subject
+          subject: Demo Account (${{ github.job }}) is currently unavailable
+          # email body as text
+          body: The Demo account - ${{ github.job }} - is currently unavailable. | We will notify you when it is available. | Thank you for your patience.
+          # comma-separated string, send email to
+          to: zecbrown1@gmail.com
+          # from email name
+          from: noReply
 
 # -----------------------------------------------------------------------------------
 
@@ -85,6 +165,26 @@ jobs:
         with:
           spec: cypress/e2e/05_Underwriter.cy.js
 
+      # Action Failed
+      - name: Send Fail Email
+        if: failure()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          # mail server settings
+          server_address: smtp.gmail.com
+          server_port: 465
+          # user credentials
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          # email subject
+          subject: Demo Account (${{ github.job }}) is currently unavailable
+          # email body as text
+          body: The Demo account - ${{ github.job }} - is currently unavailable. | We will notify you when it is available. | Thank you for your patience.
+          # comma-separated string, send email to
+          to: zecbrown1@gmail.com
+          # from email name
+          from: noReply
+
 # -----------------------------------------------------------------------------------
 
   Closer:
@@ -100,6 +200,26 @@ jobs:
         uses: cypress-io/github-action@v4 # use the explicit version number
         with:
           spec: cypress/e2e/06_Closer.cy.js
+
+      # Action Failed
+      - name: Send Fail Email
+        if: failure()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          # mail server settings
+          server_address: smtp.gmail.com
+          server_port: 465
+          # user credentials
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          # email subject
+          subject: Demo Account (${{ github.job }}) is currently unavailable
+          # email body as text
+          body: The Demo account - ${{ github.job }} - is currently unavailable. | We will notify you when it is available. | Thank you for your patience.
+          # comma-separated string, send email to
+          to: zecbrown1@gmail.com
+          # from email name
+          from: noReply
 
 # -----------------------------------------------------------------------------------
 
@@ -117,6 +237,26 @@ jobs:
         with:
           spec: cypress/e2e/07_Funder.cy.js
 
+      # Action Failed
+      - name: Send Fail Email
+        if: failure()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          # mail server settings
+          server_address: smtp.gmail.com
+          server_port: 465
+          # user credentials
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          # email subject
+          subject: Demo Account (${{ github.job }}) is currently unavailable
+          # email body as text
+          body: The Demo account - ${{ github.job }} - is currently unavailable. | We will notify you when it is available. | Thank you for your patience.
+          # comma-separated string, send email to
+          to: zecbrown1@gmail.com
+          # from email name
+          from: noReply
+
 # -----------------------------------------------------------------------------------
 
   Post-Closer:
@@ -133,33 +273,6 @@ jobs:
         with:
           spec: cypress/e2e/08_Post_Closer.cy.js
 
-# -----------------------------------------------------------------------------------
-
-      # Action was successful
-      - name: Send Success Email
-        if: success()
-        uses: dawidd6/action-send-mail@v3
-        with:
-          # mail server settings
-          server_address: smtp.gmail.com
-          server_port: 465
-          # user credentials
-          username: ${{ secrets.EMAIL_USERNAME }}
-          password: ${{ secrets.EMAIL_PASSWORD }}
-          # email subject
-          subject: ${{ github.job }} have succeeded!
-          content-type: text/html
-          # email body as text
-          html_body: file://README.md
-          # comma-separated string, send email to
-          to: zecbrown1@gmail.com
-          # from email name
-          from: noReply
-          # Optional converting Markdown to HTML (set content_type to text/html too):
-          convert_markdown: true
-
-# -----------------------------------------------------------------------------------
-
       # Action Failed
       - name: Send Fail Email
         if: failure()
@@ -172,10 +285,39 @@ jobs:
           username: ${{ secrets.EMAIL_USERNAME }}
           password: ${{ secrets.EMAIL_PASSWORD }}
           # email subject
-          subject: The Demo logins are currently down.
+          subject: Demo Account (${{ github.job }}) is currently unavailable
           # email body as text
-          body: The Demo accounts are currently down. We will notify you when they are back up and running. [![Demo Accounts (Monday)](https://github.com/zbrown001/qaa-loanApplication/actions/workflows/01_Monday.yml/badge.svg)](https://github.com/zbrown001/qaa-loanApplication/actions/workflows/01_Monday.yml)
+          body: The Demo account - ${{ github.job }} - is currently unavailable. | We will notify you when it is available. | Thank you for your patience.
           # comma-separated string, send email to
           to: zecbrown1@gmail.com
           # from email name
           from: noReply
+
+# -----------------------------------------------------------------------------------
+
+  # Action was successful
+  Success-Email:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Success Email
+        needs: [Loan-Officer,Loan-Officer-Assistant,Processor,Specialist,Underwriter,Closer,Funder,Post-Closer]
+        if: success()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          # mail server settings
+          server_address: smtp.gmail.com
+          server_port: 465
+          # user credentials
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          # email subject
+          subject: ${{ github.job }} have succeeded!
+          # email body as text
+          body: 
+          # comma-separated string, send email to
+          to: zecbrown1@gmail.com
+          # from email name
+          from: no Reply
+
+# -----------------------------------------------------------------------------------
+

@@ -39,7 +39,7 @@ jobs:
           # comma-separated string, send email to
           to: zecbrown1@gmail.com
           # from email name
-          from: noReply
+          from: Nano Status
 
 # -----------------------------------------------------------------------------------
 
@@ -75,7 +75,7 @@ jobs:
           # comma-separated string, send email to
           to: zecbrown1@gmail.com
           # from email name
-          from: noReply
+          from: Nano Status
 
 # -----------------------------------------------------------------------------------
 
@@ -111,7 +111,7 @@ jobs:
           # comma-separated string, send email to
           to: zecbrown1@gmail.com
           # from email name
-          from: noReply
+          from: Nano Status
 
 # -----------------------------------------------------------------------------------
 
@@ -147,7 +147,7 @@ jobs:
           # comma-separated string, send email to
           to: zecbrown1@gmail.com
           # from email name
-          from: noReply
+          from: Nano Status
 
 # -----------------------------------------------------------------------------------
 
@@ -183,7 +183,7 @@ jobs:
           # comma-separated string, send email to
           to: zecbrown1@gmail.com
           # from email name
-          from: noReply
+          from: Nano Status
 
 # -----------------------------------------------------------------------------------
 
@@ -219,7 +219,7 @@ jobs:
           # comma-separated string, send email to
           to: zecbrown1@gmail.com
           # from email name
-          from: noReply
+          from: Nano Status
 
 # -----------------------------------------------------------------------------------
 
@@ -255,7 +255,7 @@ jobs:
           # comma-separated string, send email to
           to: zecbrown1@gmail.com
           # from email name
-          from: noReply
+          from: Nano Status
 
 # -----------------------------------------------------------------------------------
 
@@ -291,7 +291,7 @@ jobs:
           # comma-separated string, send email to
           to: zecbrown1@gmail.com
           # from email name
-          from: noReply
+          from: Nano Status
 
 # -----------------------------------------------------------------------------------
 
@@ -311,13 +311,13 @@ jobs:
           username: ${{ secrets.EMAIL_USERNAME }}
           password: ${{ secrets.EMAIL_PASSWORD }}
           # email subject
-          subject: ${{ github.job }} have succeeded!
+          subject: Demo Training Accounts
           # email body as text
-          body: 
+          body: The Demo training accounts are all currently working as expected.
           # comma-separated string, send email to
           to: zecbrown1@gmail.com
           # from email name
-          from: no Reply
+          from: Nano Status
 
 # -----------------------------------------------------------------------------------
 

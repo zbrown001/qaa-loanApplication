@@ -1,4 +1,4 @@
-name: Demo Accounts (Monday)
+name: Demo Accounts T-F
 
 on: [push]
   #schedule:
@@ -35,7 +35,9 @@ jobs:
           # email subject
           subject: Demo Account (${{ github.job }}) is currently unavailable
           # email body as text
-          body: The Demo account - ${{ github.job }} - is currently unavailable. | We will notify you when it is available. | Thank you for your patience.
+          body: The Demo account - ${{ github.job }} - is currently unavailable. | 
+          We will notify you when it is available. | 
+          Thank you for your patience.
           # comma-separated string, send email to
           to: zecbrown1@gmail.com
           # from email name
@@ -71,7 +73,9 @@ jobs:
           # email subject
           subject: Demo Account (${{ github.job }}) is currently unavailable
           # email body as text
-          body: The Demo account - ${{ github.job }} - is currently unavailable. | We will notify you when it is available. | Thank you for your patience.
+          body: The Demo account - ${{ github.job }} - is currently unavailable. | 
+          We will notify you when it is available. | 
+          Thank you for your patience.
           # comma-separated string, send email to
           to: zecbrown1@gmail.com
           # from email name
@@ -107,7 +111,9 @@ jobs:
           # email subject
           subject: Demo Account (${{ github.job }}) is currently unavailable
           # email body as text
-          body: The Demo account - ${{ github.job }} - is currently unavailable. | We will notify you when it is available. | Thank you for your patience.
+          body: The Demo account - ${{ github.job }} - is currently unavailable. | 
+          We will notify you when it is available. | 
+          Thank you for your patience.
           # comma-separated string, send email to
           to: zecbrown1@gmail.com
           # from email name
@@ -143,7 +149,9 @@ jobs:
           # email subject
           subject: Demo Account (${{ github.job }}) is currently unavailable
           # email body as text
-          body: The Demo account - ${{ github.job }} - is currently unavailable. | We will notify you when it is available. | Thank you for your patience.
+          body: The Demo account - ${{ github.job }} - is currently unavailable. | 
+          We will notify you when it is available. | 
+          Thank you for your patience.
           # comma-separated string, send email to
           to: zecbrown1@gmail.com
           # from email name
@@ -179,7 +187,9 @@ jobs:
           # email subject
           subject: Demo Account (${{ github.job }}) is currently unavailable
           # email body as text
-          body: The Demo account - ${{ github.job }} - is currently unavailable. | We will notify you when it is available. | Thank you for your patience.
+          body: The Demo account - ${{ github.job }} - is currently unavailable. | 
+          We will notify you when it is available. | 
+          Thank you for your patience.
           # comma-separated string, send email to
           to: zecbrown1@gmail.com
           # from email name
@@ -215,7 +225,9 @@ jobs:
           # email subject
           subject: Demo Account (${{ github.job }}) is currently unavailable
           # email body as text
-          body: The Demo account - ${{ github.job }} - is currently unavailable. | We will notify you when it is available. | Thank you for your patience.
+          body: The Demo account - ${{ github.job }} - is currently unavailable. | 
+          We will notify you when it is available. | 
+          Thank you for your patience.
           # comma-separated string, send email to
           to: zecbrown1@gmail.com
           # from email name
@@ -251,7 +263,9 @@ jobs:
           # email subject
           subject: Demo Account (${{ github.job }}) is currently unavailable
           # email body as text
-          body: The Demo account - ${{ github.job }} - is currently unavailable. | We will notify you when it is available. | Thank you for your patience.
+          body: The Demo account - ${{ github.job }} - is currently unavailable. | 
+          We will notify you when it is available. | 
+          Thank you for your patience.
           # comma-separated string, send email to
           to: zecbrown1@gmail.com
           # from email name
@@ -287,7 +301,9 @@ jobs:
           # email subject
           subject: Demo Account (${{ github.job }}) is currently unavailable
           # email body as text
-          body: The Demo account - ${{ github.job }} - is currently unavailable. | We will notify you when it is available. | Thank you for your patience.
+          body: The Demo account - ${{ github.job }} - is currently unavailable. | 
+          We will notify you when it is available. | 
+          Thank you for your patience.
           # comma-separated string, send email to
           to: zecbrown1@gmail.com
           # from email name

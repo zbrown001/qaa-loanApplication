@@ -1,0 +1,114 @@
+name: Demo Account (Other Days)
+
+on: [push]
+  #schedule:
+    #- cron: '0 * * * *'
+
+jobs:
+  Demo-Logins:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          #build: npm i -D cypress
+
+# -----------------------------------------------------------------------------------
+
+      - name: Demo Loan Officer
+        uses: cypress-io/github-action@v4 # use the explicit version number
+        with:
+          spec: cypress/e2e/01_Loan_officer.cy.js
+
+# -----------------------------------------------------------------------------------
+
+      - name: Demo Loan Officer Assistant
+        uses: cypress-io/github-action@v4 # use the explicit version number
+        with:
+          spec: cypress/e2e/02_Loan_officer_assistant.cy.js
+
+# -----------------------------------------------------------------------------------
+
+      - name: Demo Processor
+        uses: cypress-io/github-action@v4 # use the explicit version number
+        with:
+          spec: cypress/e2e/03_Processor.cy.js
+
+# -----------------------------------------------------------------------------------
+
+      - name: Demo Specialist
+        uses: cypress-io/github-action@v4 # use the explicit version number
+        with:
+          spec: cypress/e2e/04_Specialist.cy.js
+
+# -----------------------------------------------------------------------------------
+
+      - name: Demo Underwriter
+        uses: cypress-io/github-action@v4 # use the explicit version number
+        with:
+          spec: cypress/e2e/05_Underwriter.cy.js
+
+# -----------------------------------------------------------------------------------
+
+      - name: Demo Closer
+        uses: cypress-io/github-action@v4 # use the explicit version number
+        with:
+          spec: cypress/e2e/06_Closer.cy.js
+
+# -----------------------------------------------------------------------------------
+
+      - name: Demo Funder
+        uses: cypress-io/github-action@v4 # use the explicit version number
+        with:
+          spec: cypress/e2e/07_Funder.cy.js
+
+# -----------------------------------------------------------------------------------
+
+      - name: Demo Post-Closer
+        uses: cypress-io/github-action@v4 # use the explicit version number
+        with:
+          spec: cypress/e2e/08_Post_Closer.cy.js
+
+# -----------------------------------------------------------------------------------
+
+      # Action was successful
+      - name: Send Success Email
+        if: success()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          # mail server settings
+          server_address: smtp.gmail.com
+          server_port: 465
+          # user credentials
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          # email subject
+          subject: ${{ github.job }} have succeeded!
+          # email body as text
+          body: ${{ github.job }} have succeeded!
+          # comma-separated string, send email to
+          to: zecbrown1@gmail.com
+          # from email name
+          from: noReply
+
+# -----------------------------------------------------------------------------------
+
+      # Action Failed
+      - name: Send Fail Email
+        if: failure()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          # mail server settings
+          server_address: smtp.gmail.com
+          server_port: 465
+          # user credentials
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          # email subject
+          subject: The Demo logins are currently down.
+          # email body as text
+          body: The Demo accounts are currently down. We will notify you when they are back up and running.
+          # comma-separated string, send email to
+          to: zecbrown1@gmail.com
+          # from email name
+          from: noReply

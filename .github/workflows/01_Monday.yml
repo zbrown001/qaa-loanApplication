@@ -1,4 +1,4 @@
-name: Demo Account Sign In Test
+name: Demo Accounts (Monday)
 
 on: [push]
   #schedule:
@@ -89,7 +89,7 @@ jobs:
           # comma-separated string, send email to
           to: zecbrown1@gmail.com
           # from email name
-          from: John Doe
+          from: noReply
 
 # -----------------------------------------------------------------------------------
 
@@ -111,4 +111,4 @@ jobs:
           # comma-separated string, send email to
           to: zecbrown1@gmail.com
           # from email name
-          from: John Doe
+          from: noReply

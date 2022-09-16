@@ -19,7 +19,7 @@ jobs:
       - name: Demo Loan Officer
         uses: cypress-io/github-action@v4 # use the explicit version number
         with:
-          build: export CYPRESS_RECORD_KEY=b44d18cc-21e5-45ae-8acb-88b350ec5a27
+          build: CYPRESS_RECORD_KEY=b44d18cc-21e5-45ae-8acb-88b350ec5a27
           spec: cypress/e2e/01_Loan_officer.cy.js
           record: true
 

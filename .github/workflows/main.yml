@@ -20,26 +20,26 @@ jobs:
           spec: cypress/e2e/01_Loan_officer.cy.js
 
       - name: Test Success
-          uses: rjstone/discord-webhook-notify@v1
-          if: success()
-          with:
-              severity: info
-              details: Test Succeeded!
-              webhookUrl: ${{ secrets.https://discord.com/api/webhooks/1020372764605026356/d63ZhOTds67Pg9_Br_4agA44ch0CIXFeohRjsPqWLsHXow4Fnq1kQbkypq3K2xDoR7R1 }}
+        uses: rjstone/discord-webhook-notify@v1
+        if: success()
+        with:
+            severity: info
+            details: Test Succeeded!
+            webhookUrl: ${{ secrets.https://discord.com/api/webhooks/1020372764605026356/d63ZhOTds67Pg9_Br_4agA44ch0CIXFeohRjsPqWLsHXow4Fnq1kQbkypq3K2xDoR7R1 }}
       - name: Test Failure
-          uses: rjstone/discord-webhook-notify@v1
-          if: failure()
-          with:
-              severity: error
-              details: Test Failed!
-              webhookUrl: ${{ secrets.https://discord.com/api/webhooks/1020372764605026356/d63ZhOTds67Pg9_Br_4agA44ch0CIXFeohRjsPqWLsHXow4Fnq1kQbkypq3K2xDoR7R1 }}
+        uses: rjstone/discord-webhook-notify@v1
+        if: failure()
+        with:
+            severity: error
+            details: Test Failed!
+            webhookUrl: ${{ secrets.https://discord.com/api/webhooks/1020372764605026356/d63ZhOTds67Pg9_Br_4agA44ch0CIXFeohRjsPqWLsHXow4Fnq1kQbkypq3K2xDoR7R1 }}
       - name: Test Cancelled
-          uses: rjstone/discord-webhook-notify@v1
-          if: cancelled()
-          with:
-              severity: warn
-              details: Test Cancelled!
-              webhookUrl: ${{ secrets.https://discord.com/api/webhooks/1020372764605026356/d63ZhOTds67Pg9_Br_4agA44ch0CIXFeohRjsPqWLsHXow4Fnq1kQbkypq3K2xDoR7R1 }}
+        uses: rjstone/discord-webhook-notify@v1
+        if: cancelled()
+        with:
+            severity: warn
+            details: Test Cancelled!
+            webhookUrl: ${{ secrets.https://discord.com/api/webhooks/1020372764605026356/d63ZhOTds67Pg9_Br_4agA44ch0CIXFeohRjsPqWLsHXow4Fnq1kQbkypq3K2xDoR7R1 }}
 
 
 # -----------------------------------------------------------------------------------

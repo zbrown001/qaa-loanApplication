@@ -43,7 +43,7 @@ jobs:
             We will notify you when it is available.
             Thank you for your patience.
           # comma-separated string, send email to
-          to: zecbrown1@gmail.com
+          to: status@nanolos.com
           # from email name
           from: Nano Status
 
@@ -85,7 +85,7 @@ jobs:
             We will notify you when it is available.
             Thank you for your patience.
           # comma-separated string, send email to
-          to: zecbrown1@gmail.com
+          to: status@nanolos.com
           # from email name
           from: Nano Status
 
@@ -127,7 +127,7 @@ jobs:
             We will notify you when it is available.
             Thank you for your patience.
           # comma-separated string, send email to
-          to: zecbrown1@gmail.com
+          to: status@nanolos.com
           # from email name
           from: Nano Status
 
@@ -169,7 +169,7 @@ jobs:
             We will notify you when it is available.
             Thank you for your patience.
           # comma-separated string, send email to
-          to: zecbrown1@gmail.com
+          to: status@nanolos.com
           # from email name
           from: Nano Status
 
@@ -211,7 +211,7 @@ jobs:
             We will notify you when it is available.
             Thank you for your patience.
           # comma-separated string, send email to
-          to: zecbrown1@gmail.com
+          to: status@nanolos.com
           # from email name
           from: Nano Status
 
@@ -253,7 +253,7 @@ jobs:
             We will notify you when it is available.
             Thank you for your patience.
           # comma-separated string, send email to
-          to: zecbrown1@gmail.com
+          to: status@nanolos.com
           # from email name
           from: Nano Status
 
@@ -295,7 +295,7 @@ jobs:
             We will notify you when it is available.
             Thank you for your patience.
           # comma-separated string, send email to
-          to: zecbrown1@gmail.com
+          to: status@nanolos.com
           # from email name
           from: Nano Status
 
@@ -337,7 +337,7 @@ jobs:
             We will notify you when it is available.
             Thank you for your patience.
           # comma-separated string, send email to
-          to: zecbrown1@gmail.com
+          to: status@nanolos.com
           # from email name
           from: Nano Status
 

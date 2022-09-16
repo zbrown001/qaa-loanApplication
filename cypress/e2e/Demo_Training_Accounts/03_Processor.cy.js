@@ -9,7 +9,7 @@ describe('Automation Test Suite - Fixtures', function () {
 
   // Get Parameters
   before(function () {
-    cy.fixture('example.json').then(function (data) {
+    cy.fixture('Demo_Training_Accounts/data.json').then(function (data) {
       this.data = data;
     })
   })
@@ -26,7 +26,7 @@ describe('Automation Test Suite - Fixtures', function () {
     cy.xpath('//a[normalize-space()="Get Started"]').click()
 
     // Enter Email Address
-    cy.xpath('//input[@id="username"]').type(this.data.DemoLOAEmail)
+    cy.xpath('//input[@id="username"]').type(this.data.DemoProcessingEmail)
 
     // Enter Password
     cy.xpath('//input[@id="password"]').type(this.data.Password)

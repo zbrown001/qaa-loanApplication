@@ -1,8 +1,8 @@
 name: Demo Accounts T-F
 
-on:
-  schedule:
-    - cron: '0 6 * * 2,3,4,5'
+on: [push]
+  #schedule:
+    #- cron: '0 6 * * 2,3,4,5'
 
 jobs:
 
@@ -19,7 +19,7 @@ jobs:
       - name: Demo Loan Officer
         uses: cypress-io/github-action@v4 # use the explicit version number
         with:
-          spec: cypress/e2e/01_Loan_officer.cy.js
+          spec: cypress/e2e/Demo_Training_Accounts/01_Loan_officer.cy.js
           record: true
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
@@ -61,7 +61,7 @@ jobs:
       - name: Demo Loan Officer Assistant
         uses: cypress-io/github-action@v4 # use the explicit version number
         with:
-          spec: cypress/e2e/02_Loan_officer_assistant.cy.js
+          spec: cypress/e2e/Demo_Training_Accounts/02_Loan_officer_assistant.cy.js
           record: true
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
@@ -103,7 +103,7 @@ jobs:
       - name: Demo Processor
         uses: cypress-io/github-action@v4 # use the explicit version number
         with:
-          spec: cypress/e2e/03_Processor.cy.js
+          spec: cypress/e2e/Demo_Training_Accounts/03_Processor.cy.js
           record: true
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
@@ -145,7 +145,7 @@ jobs:
       - name: Demo Specialist
         uses: cypress-io/github-action@v4 # use the explicit version number
         with:
-          spec: cypress/e2e/04_Specialist.cy.js
+          spec: cypress/e2e/Demo_Training_Accounts/04_Specialist.cy.js
           record: true
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
@@ -187,7 +187,7 @@ jobs:
       - name: Demo Underwriter
         uses: cypress-io/github-action@v4 # use the explicit version number
         with:
-          spec: cypress/e2e/05_Underwriter.cy.js
+          spec: cypress/e2e/Demo_Training_Accounts/05_Underwriter.cy.js
           record: true
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
@@ -229,7 +229,7 @@ jobs:
       - name: Demo Closer
         uses: cypress-io/github-action@v4 # use the explicit version number
         with:
-          spec: cypress/e2e/06_Closer.cy.js
+          spec: cypress/e2e/Demo_Training_Accounts/06_Closer.cy.js
           record: true
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
@@ -271,7 +271,7 @@ jobs:
       - name: Demo Funder
         uses: cypress-io/github-action@v4 # use the explicit version number
         with:
-          spec: cypress/e2e/07_Funder.cy.js
+          spec: cypress/e2e/Demo_Training_Accounts/07_Funder.cy.js
           record: true
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
@@ -313,7 +313,7 @@ jobs:
       - name: Demo Post-Closer
         uses: cypress-io/github-action@v4 # use the explicit version number
         with:
-          spec: cypress/e2e/08_Post_Closer.cy.js
+          spec: cypress/e2e/Demo_Training_Accounts/08_Post_Closer.cy.js
           record: true
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}

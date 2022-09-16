@@ -1,1 +1,1 @@
-<p><a href="https://github.com/zbrown001/qaa-loanApplication/actions/workflows/01_Monday.yml"><img src="https://github.com/zbrown001/qaa-loanApplication/actions/workflows/01_Monday.yml/badge.svg" alt="Demo Accounts"></a></p>
+-

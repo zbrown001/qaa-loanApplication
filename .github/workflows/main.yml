@@ -18,6 +18,7 @@ jobs:
         uses: cypress-io/github-action@v4 # use the explicit version number
         with:
           spec: cypress/e2e/01_Loan_officer.cy.js
+          key: b44d18cc-21e5-45ae-8acb-88b350ec5a27
 
 # -----------------------------------------------------------------------------------
 
@@ -46,7 +47,7 @@ jobs:
           build: npm i -D cypress
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
-      - name: Demo Loan Officer Assistant
+      - name: Demo Processor
         uses: cypress-io/github-action@v4 # use the explicit version number
         with:
           spec: cypress/e2e/03_Processor.cy.js
@@ -62,7 +63,7 @@ jobs:
           build: npm i -D cypress
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
-      - name: Demo Loan Officer Assistant
+      - name: Demo Specialist
         uses: cypress-io/github-action@v4 # use the explicit version number
         with:
           spec: cypress/e2e/04_Specialist.cy.js
@@ -78,7 +79,7 @@ jobs:
           build: npm i -D cypress
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
-      - name: Demo Loan Officer Assistant
+      - name: Demo Underwriter
         uses: cypress-io/github-action@v4 # use the explicit version number
         with:
           spec: cypress/e2e/05_Underwriter.cy.js
@@ -94,7 +95,7 @@ jobs:
           build: npm i -D cypress
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
-      - name: Demo Loan Officer Assistant
+      - name: Demo Closer
         uses: cypress-io/github-action@v4 # use the explicit version number
         with:
           spec: cypress/e2e/06_Closer.cy.js
@@ -110,7 +111,7 @@ jobs:
           build: npm i -D cypress
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
-      - name: Demo Loan Officer Assistant
+      - name: Demo Funder
         uses: cypress-io/github-action@v4 # use the explicit version number
         with:
           spec: cypress/e2e/07_Funder.cy.js
@@ -126,7 +127,7 @@ jobs:
           build: npm i -D cypress
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
-      - name: Demo Loan Officer Assistant
+      - name: Demo Post-Closer
         uses: cypress-io/github-action@v4 # use the explicit version number
         with:
           spec: cypress/e2e/08_Post_Closer.cy.js

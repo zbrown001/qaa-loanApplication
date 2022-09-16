@@ -35,7 +35,7 @@ describe('Automation Test Suite - Fixtures', function () {
     cy.xpath('//button[@name="action"]').click()
 
     // Wait for Nano LOS to load...
-    cy.xpath('//h2[normalize-space()="Search"]', { timeout: 60000 }).click()
+    cy.xpath('//h2[normalize-space()="Search"]', { imeout: 60000 }).click()
     
   })
 })

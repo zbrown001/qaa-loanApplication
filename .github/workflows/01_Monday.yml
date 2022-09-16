@@ -148,8 +148,9 @@ jobs:
           password: ${{ secrets.EMAIL_PASSWORD }}
           # email subject
           subject: ${{ github.job }} have succeeded!
+          content-type: text/html
           # email body as text
-          body: ${{ github.job }} have succeeded! [![Demo Accounts (Monday)](https://github.com/zbrown001/qaa-loanApplication/actions/workflows/01_Monday.yml/badge.svg)](https://github.com/zbrown001/qaa-loanApplication/actions/workflows/01_Monday.yml)
+          html_body: file://README.md
           # comma-separated string, send email to
           to: zecbrown1@gmail.com
           # from email name
@@ -178,5 +179,3 @@ jobs:
           to: zecbrown1@gmail.com
           # from email name
           from: noReply
-          # Optional converting Markdown to HTML (set content_type to text/html too):
-          convert_markdown: true

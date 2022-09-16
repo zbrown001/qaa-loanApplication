@@ -298,9 +298,9 @@ jobs:
   # Action was successful
   Success-Email:
     runs-on: ubuntu-latest
+    needs: [Loan-Officer,Loan-Officer-Assistant,Processor,Specialist,Underwriter,Closer,Funder,Post-Closer]
     steps:
       - name: Send Success Email
-        needs: [Loan-Officer,Loan-Officer-Assistant,Processor,Specialist,Underwriter,Closer,Funder,Post-Closer]
         if: success()
         uses: dawidd6/action-send-mail@v3
         with:

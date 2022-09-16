@@ -1,11 +1,11 @@
-name: Cypress Tests
+name: Demo Account Sign In Test
 
 on: [push]
   #schedule:
     #- cron: '0 * * * *'
 
 jobs:
-  demo-lo:
+  Loan-Officer:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -17,9 +17,11 @@ jobs:
       - name: Demo Loan Officer
         uses: cypress-io/github-action@v4 # use the explicit version number
         with:
-          spec: cypress/e2e/LoanOfficer/demoLO.cy.js
+          spec: cypress/e2e/01_Loan_officer.cy.js
 
-  demo-loa:
+# -----------------------------------------------------------------------------------
+
+  Loan-Officer-Assistant:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -31,4 +33,102 @@ jobs:
       - name: Demo Loan Officer Assistant
         uses: cypress-io/github-action@v4 # use the explicit version number
         with:
-          spec: cypress/e2e/LoanOfficerAssistant/demoLOA.cy.js
+          spec: cypress/e2e/02_Loan_officer_assistant.cy.js
+
+# -----------------------------------------------------------------------------------
+
+  Processor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          build: npm i -D cypress
+      # Install NPM dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Demo Loan Officer Assistant
+        uses: cypress-io/github-action@v4 # use the explicit version number
+        with:
+          spec: cypress/e2e/03_Processor.cy.js
+
+# -----------------------------------------------------------------------------------
+
+  Specialist:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          build: npm i -D cypress
+      # Install NPM dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Demo Loan Officer Assistant
+        uses: cypress-io/github-action@v4 # use the explicit version number
+        with:
+          spec: cypress/e2e/04_Specialist.cy.js
+
+# -----------------------------------------------------------------------------------
+
+  Underwriter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          build: npm i -D cypress
+      # Install NPM dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Demo Loan Officer Assistant
+        uses: cypress-io/github-action@v4 # use the explicit version number
+        with:
+          spec: cypress/e2e/05_Underwriter.cy.js
+
+# -----------------------------------------------------------------------------------
+
+  Closer:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          build: npm i -D cypress
+      # Install NPM dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Demo Loan Officer Assistant
+        uses: cypress-io/github-action@v4 # use the explicit version number
+        with:
+          spec: cypress/e2e/06_Closer.cy.js
+
+# -----------------------------------------------------------------------------------
+
+  Funder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          build: npm i -D cypress
+      # Install NPM dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Demo Loan Officer Assistant
+        uses: cypress-io/github-action@v4 # use the explicit version number
+        with:
+          spec: cypress/e2e/07_Funder.cy.js
+
+# -----------------------------------------------------------------------------------
+
+  Post-Closer:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          build: npm i -D cypress
+      # Install NPM dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Demo Loan Officer Assistant
+        uses: cypress-io/github-action@v4 # use the explicit version number
+        with:
+          spec: cypress/e2e/08_Post_Closer.cy.js
+
+# -----------------------------------------------------------------------------------

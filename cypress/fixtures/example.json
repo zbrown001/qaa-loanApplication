@@ -1,3 +1,13 @@
 {
-  "application": "https://test.nanolos.com/loan-application/"
+  "application": "https://canopy-spa-demo-azure.nanolos.com/flux/",
+  "demoFlowLogin": "https://flow-demo-azure.nanolos.com/",
+  "DemoLOEmail": "demo-lo@nanolos.com",
+  "DemoLOAEmail": "demo-loa@nanolos.com",
+  "DemoProcessingEmail": "demo-processing@nanolos.com",
+  "DemoProcessingAssistantEmail": "demo-processingassistant@nanolos.com",
+  "DemoUnderwritingEmail": "demo-underwriting@nanolos.com",
+  "DemoClosingEmail": "demo-closing@nanolos.com",
+  "DemoFundingEmail": "demo-funding@nanolos.com",
+  "DemoPostClosingEmail": "demo-postclosing@nanolos.com",
+  "Password": "Demo03062022!"
 }

@@ -8,7 +8,9 @@
   },
   "devDependencies": {
     "@faker-js/faker": "^7.5.0",
-    "cypress": "^10.8.0"
+    "@testing-library/cypress": "^8.0.3",
+    "cypress": "^10.8.0",
+    "cypress-social-logins": "^1.14.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

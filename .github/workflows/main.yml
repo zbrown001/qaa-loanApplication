@@ -5,7 +5,7 @@ on: [push]
     #- cron: '0 * * * *'
 
 jobs:
-  Demo Logins:
+  Demo-Logins:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

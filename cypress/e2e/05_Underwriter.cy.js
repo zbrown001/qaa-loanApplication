@@ -20,7 +20,7 @@ describe('Automation Test Suite - Fixtures', function () {
     const emailDigits = faker.random.numeric(8);
     
     // Go to Flux Demo
-    cy.visit(this.data.a
+    cy.visit(this.data.application);
 
     // Click Get Started
     cy.xpath('//a[normalize-space()="Get Started"]').click()
